@@ -17,4 +17,16 @@ public class pageController {
         // Devuelve la vista 'about.html' desde src/main/resources/templates/
         return "historia";
     }
+    
+    @GetMapping("/formas")
+    public String formas() {
+        // Devuelve la vista 'about.html' desde src/main/resources/templates/
+        return "formas";
+    }
+    
+    @GetMapping("/cinturones")
+    public String cinturones() {
+        // Devuelve la vista 'about.html' desde src/main/resources/templates/
+        return "cinturones";
+    }
 }

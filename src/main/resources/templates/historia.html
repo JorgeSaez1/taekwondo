@@ -1,38 +1,189 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>Home</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/stylee.css">
+	<title>Historia del taekwondo</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" th:href="@{/}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" th:href="@{/historia}">Historia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<body>
-	
-    <h1>Welcome to the Home Page</h1>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
 
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light" id="clor-navbar" style="background-color: black; padding: 8px;">
+		<div class="container-fluid" style="padding-left: 1000px;">
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav">
+					<li class="nav-item" id="btn-white">
+						<a class="nav-link active" style="color: white;" aria-current="page" th:href="@{/}">
+							<h5>Inicio</h5>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" style="color: white;" th:href="@{/historia}">
+							<h5>Historia</h5>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" style="color: white; " th:href="@{/formas}">
+							<h5>Formas</h5>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" style="color: white;" th:href="@{/cinturones}">
+							<h5>Cinturones</h5>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container1">
+		<h1>La historia del Taekwondo ITF</h1>
+		<br>
+		<p>
+			El creador y fundador el general Choi Hong-hi empezo creando esta arte marcial a base de Taek Kyon y Karate
+			japones
+			todo se origino ya que como se dice el fue un general de las fuerzas armadas de corea del sur en donde el
+			sembro esta arte marcial
+			empezando a darse a conocer. Antes de estos sucesos el general choi entrenaba karate en japon en donde
+			estaba prisionero en donde
+			inicio un movimiento de liberacion nacional conocido como el incidente de los soldados estudiantes de
+			Pyongyan. En enero de 1946
+			recibio el grado de subteniente de la nueva Corea.
+
+			Empezo a enseñar a sus soldados karate una forma de entrenamiento fisico y metal. Comprendio con el tiempo
+			que debia desarrolar
+			un arte marcial nacional siendo superior en espiritu y tecnicas que el dominaba.
+			El no estaba solo tenia a tres disipulos principales en donde les hizo una promesa que el arte marcial que
+			creo lo conoceria todo corea
+			en donde mas que tecnicas y defensa personal entrara en espitualidad en la cual lleva a sabiduria.
+
+			Con dicha promesa y ambicion de crear esta nueva arte marcial desarrollo tecnicas, formas sistematicas.
+			Al final del año 1.954 casi termino de fundar esta nueva arte marcial y ya para el 11 de abril de 1.955 se
+			le comenzo a llamar
+			TAEKWON-DO en donde principalmente hay principios eticos y morales, ademas de la filosofia personal que el
+			tenia en esos años.
+		</p>
+
+		<img id="img1" style="max-width: 100%;" src="img/GeneralChoi.jpeg" />
+	</div>
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="margin-top: 500px;">
+	<!-- Section: Social media -->
+	<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<!-- Left -->
+
+		<!-- Right -->
+		<div>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-google"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-github"></i>
+			</a>
+		</div>
+		<!-- Right -->
+	</section>
+	<!-- Section: Social media -->
+
+	<!-- Section: Links  -->
+	<section class="">
+		<div class="container text-center text-md-start mt-5">
+			<!-- Grid row -->
+			<div class="row mt-3">
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+					<!-- Content -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						<i class="fas fa-gem me-3"></i>Sede Taekwondo Temuco
+					</h6>
+					<p>
+						ven y entrena con nosotros, aprende esta linda y hermosa arte marcial
+						se parte de una familia, competencias, valores y mas.
+					</p>
+				</div>
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						links
+					</h6>
+					<p>
+						<a th:href="@{/}" class="text-reset ">Inicio</a>
+					</p>
+					<p>
+						<a th:href="@{/historia}" class="text-reset">Historia</a>
+					</p>
+					<p>
+						<a th:href="@{/formas}" class="text-reset">Formas</a>
+					</p>
+					<p>
+						<a th:href="@{/cinturones}" class="text-reset">Cinturones</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+					<p><i class="fas fa-home me-3"></i> Castilla 855, Temuco, Araucanía</p>
+					<p>
+						<i class="fas fa-envelope me-3"></i>
+						ccurin82@gmail.com
+					</p>
+					<p><i class="fas fa-phone me-3"></i> +56 9 89965898</p>
+				</div>
+
+
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.2558525195627!2d-72.6279878242592!3d-38.73489067175917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d40dc2a4c17f%3A0xce3ac0bdfb023b18!2sSede%20Monte%20Verde!5e0!3m2!1ses!2scl!4v1737325675760!5m2!1ses!2scl"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+	</section>
+	<!-- Section: Links  -->
+
+	<!-- Copyright -->
+	<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		© 2025 Copyright
+	</div>
+	<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>
