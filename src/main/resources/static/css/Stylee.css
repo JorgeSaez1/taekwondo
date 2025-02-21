@@ -5,26 +5,102 @@
 	box-sizing: border-box;
 }
 
-/* Estilos de la navbar */
-.navbar {
-	background-color: #333;
-	color: white;
-	padding: 20px;
+
+/* Contenedor de la navbar */
+.container-fluid {
+    display: flex;
+    justify-content: space-between; /* Distribuye el botón y los enlaces */
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden mejor en pantallas pequeñas */
 }
 
-.navbar ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
+/* Lista de navegación */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+	margin-left: 540px;
 }
 
-.navbar ul li {
-	margin: 0 20px;
+/* Enlaces */
+.nav-link {
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.navbar ul li a {
-	color: white;
-	text-decoration: none;
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    display: none; /* Oculto en escritorio */
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* -----------------------------------------
+   📱 1. Móviles pequeños (hasta 576px)
+----------------------------------------- */
+@media screen and (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-end; /* Alinea el menú a la derecha */
+    }
+
+    .navbar-toggler {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+
+    .collapse.show {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* -----------------------------------------
+   📱 2. Móviles medianos y tablets (hasta 768px)
+----------------------------------------- */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-end;
+    }
+}
+
+/* -----------------------------------------
+   📱 3. Tablets y pantallas medianas (hasta 992px)
+----------------------------------------- */
+@media screen and (max-width: 992px) {
+    .container-fluid {
+        justify-content: space-between; /* Espaciado ideal para móviles y tablets */
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .collapse.show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
 }
 
 /* Contenedor de las secciones */

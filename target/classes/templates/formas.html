@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<link rel="stylesheet" href="css/stylee.css">
+	<link rel="stylesheet" href="css/styleeCinturones.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -18,37 +18,127 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light" id="clor-navbar" style="background-color: black;">
-	<div class="container-fluid" style="padding-left: 992px;">
-		<div class="collapse navbar-collapse" id="navbar">
-			<ul class="navbar-nav">
-				<li class="nav-item" id="btn-white">
-					<a class="nav-link active" style="color: white;" aria-current="page" th:href="@{/}">
-						<h5>Inicio</h5>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" style="color: white;" th:href="@{/historia}">
-						<h5>Historia</h5>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" style="color: white; " th:href="@{/formas}">
-						<h5>Formas</h5>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" style="color: white;" th:href="@{/cinturones}">
-						<h5>Cinturones</h5>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+    <div class="container-fluid">
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" id="menu-toggle">&#9776;</button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item" id="btn-white">
+                    <a class="nav-link active" style="color: white;" aria-current="page" th:href="@{/}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" th:href="@{/historia}">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" th:href="@{/formas}">Formas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" th:href="@{/cinturones}">Cinturones</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <body>
 
-	<h1>formas de los grados kup</h1>
+	<div class="container">
+			<div class="section">
+				<img src="img/cinturonBlanco.png" alt="Imagen 1">
+				<p> En este 10°Gup que representa la inociencia e el inicio de esta marcial
+					se aprende dos Tuls Saju Jirugi (Cruz de ataque) 7 movimientos y Saju Makgi (Cruz de defensa) 8 movimientos por lado.
+	
+				</p>
+				
+			</div>
+			<div class="section">
+				<img src="img/blancoPAmarilla.png" alt="Imagen 2">
+				<p>
+					En este 9° Gup filosoficamente representa Cielo-Tierra en donde es el comienzo de un camino.
+					Se aprende un Tuls Chon-Ji (19 movimientos)
+				</p>
+			</div>
+			<div class="section">
+				<img src="img/amarilla.png" alt="Imagen 3">
+				<p> 
+					En este 8° Gup se aprende el Tul Dan-Gun (21 movimientos) que proviene del Santo llamado Dan-Gun, fundador de Corea.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/amarillaPVerde.png" alt="Imagen 4">
+				<p> 
+					En este 7° Gup se aprende el tul Do-San (24 movimientos), que es el seudonimo
+					del patriota Ahn Chang-Jo que se dedico al desarrollo educacional de Corea.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/verde.png" alt="Imagen 5">
+				<p>
+					 En este 6° Gup se aprende Won-Hyo (28 movimientos), que se refiere 
+					 al monje que introdujo el budismo en la dinastia Silia.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/verdePAzul.png" alt="Imagen 6">
+				<p>
+					En este 5° Gup se aprende Yul-Gok (38 movimientos), que se refiere 
+					al seudonimo del gran filosofo llamado Yi l igual llamado como el
+					confucio de Korea.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/azul.png" alt="Imagen 7">
+				<p> 
+					En este 4° Gup se aprende Joong-Gun (32 movimientos), que se refiere
+					al patriota Ahn Joon-Gun quien asesino a Hiro-Bumi, el primer
+					gobernador general japones de Corea.
+				</p>
+
+			</div>
+			
+			<div class="section">
+				<img src="img/azulPRoja.png" alt="Imagen 8">
+				<p> 
+					En este 3° Gup se aprende Toy-Gye (37 movimientos), que se refiere
+					al erudito Yi Hwang autoridad en el tema del confucionismo.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/roja.png" alt="Imagen 9">
+				<p>
+					En este 2° Gup se aprende Hwa-Rang (29 movimientos), que se refiere al 
+					grupo de jovenes que tiene su origen en la dinastia Silia. Los 29 movimientos
+					se refiere a la 29° Division de infanteria.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/rojaPNegra.png" alt="Imagen 10">
+				<p> 
+					En este 1° Gup se aprende Choong-Moo (30 movimientos), que se refiere
+					al nombre dado al gran almirante Yi Soon-Sin en la dinastia Lee dado que el
+					invento el primer barco de guerra armado.
+				</p>
+			</div>
+			
+			<div class="section">
+				<img src="img/negro.png" alt="Imagen 11">
+				<p> 
+					En este Gup ya pasa a ser llamado 1° Dan en donde se aprende Kwang-Gae (39 movimientos), se le llama asi ya que
+					proviene del nombre Kwang Gae Toh-Wang 19° rey de la dinastia de Koguryo 
+					quien reconquisto territorios perdidos. Los 39 movimientos del Tul se refiere
+					a los primeros numeros del año 391 A.D cuando subio al trono.
+				</p>
+			</div>
+		</div>
+		
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
